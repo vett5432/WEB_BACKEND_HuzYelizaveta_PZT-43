@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Заказ пиццы</title>
+</head>
+<body>
+    <h2>Заказ пиццы</h2>
+
+    <form action="4.php" method="POST">
+
+        Имя: <input type="text" name="name"><br><br>
+
+        Размер пиццы:<br>
+        <input type="radio" name="size" value="Маленькая"> Маленькая<br>
+        <input type="radio" name="size" value="Средняя"> Средняя<br>
+        <input type="radio" name="size" value="Большая"> Большая<br><br>
+
+        Добавки:<br>
+        <input type="checkbox" name="toppings[]" value="Сыр"> Сыр<br>
+        <input type="checkbox" name="toppings[]" value="Грибы"> Грибы<br>
+        <input type="checkbox" name="toppings[]" value="Пепперони"> Пепперони<br><br>
+
+        Соус:
+        <select name="sauce">
+            <option value="Томатный">Томатный</option>
+            <option value="Сырный">Сырный</option>
+            <option value="Чесночный">Чесночный</option>
+        </select><br><br>
+
+        <button type="submit">Заказать</button>
+    </form>
+</body>
+</html>
